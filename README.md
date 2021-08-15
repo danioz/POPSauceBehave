@@ -9,5 +9,5 @@ This is an example of a python framework with the page object pattern.
 
 # Status
 Implemented :
-LoginPage.feature
-InventoryPage.feature
+- LoginPage.feature
+- InventoryPage.feature
