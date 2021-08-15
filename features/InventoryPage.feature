@@ -19,7 +19,7 @@ Background: common steps
     And I click remove button
     Then Cart icon should be empty
 
-  Scenario Outline: Login to SauceDemo with Multiple parameters
+  Scenario Outline: Adding and removing item with multiple parameters
     When I click add to cart button for item "<item>"
     Then Cart icon should display 1
     When I click remove button for item "<item>"
