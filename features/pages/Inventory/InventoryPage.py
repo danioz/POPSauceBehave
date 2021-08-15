@@ -71,7 +71,7 @@ class InventoryPage(BasePage):
     def add_item_link(self, item):
         link = (By.XPATH, f"//div[@class='inventory_item_name'][text()='{item}']")
         self.do_click(link)
-        from Pages.Item.ItemPage import ItemPage
+        from features.pages.Item.ItemPage import ItemPage
         return ItemPage(self.driver)
 
     @allure.step("Getting name of the item")
