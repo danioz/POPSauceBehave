@@ -18,3 +18,22 @@ Background: common steps
     When  I click add to cart button
     And I click remove button
     Then Cart icon should be empty
+
+  Scenario Outline: Login to SauceDemo with Multiple parameters
+    When I click add to cart button for item "<item>"
+    Then Cart icon should display 1
+    When I click remove button for item "<item>"
+    Then Cart icon should be empty
+
+    Examples:
+      | item          |
+      | backpack      |
+      | bike-light    |
+      |bolt-t-shirt   |
+      |fleece-jacket  |
+      |onesie         |
+      |t-shirt-(red)  |
+
+
+
+

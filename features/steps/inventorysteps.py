@@ -43,3 +43,15 @@ def step_impl(context):
 @then(u'Cart icon should be empty')
 def step_impl(context):
     inventoryPage.empty_cart()
+
+@when(u'I click add to cart button for item "{item}"')
+def step_impl(context, item):
+    inventoryPage.add_item_to_cart(item)
+
+
+
+@when(u'I click remove button for item "{item}"')
+def step_impl(context, item):
+    inventoryPage.remove_item_from_cart(item)
+
+
