@@ -11,3 +11,4 @@ This is an example of a python framework with the page object pattern.
 Implemented :
 - LoginPage.feature
 - InventoryPage.feature
+- ItemPage.feature
