@@ -29,10 +29,10 @@ Background: common steps
       | item          |
       | backpack      |
       | bike-light    |
-      |bolt-t-shirt   |
-      |fleece-jacket  |
-      |onesie         |
-      |t-shirt-(red)  |
+      | bolt-t-shirt  |
+      | fleece-jacket |
+      | onesie        |
+      | t-shirt-(red) |
 
 
 
