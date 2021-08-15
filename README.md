@@ -8,4 +8,6 @@ This is an example of a python framework with the page object pattern.
 - webdriver-manager
 
 # Status
-Implemented LoginPage.feature for now
+Implemented :
+- LoginPage.feature
+- InventoryPage.feature
