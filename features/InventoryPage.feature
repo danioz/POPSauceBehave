@@ -17,13 +17,13 @@ Background: common steps
   Scenario: Removing item from cart
     When  I click add to cart button
     And I click remove button
-    Then Cart icon should be empty
+    Then Cart should be empty
 
   Scenario Outline: Adding and removing item with multiple parameters
     When I click add to cart button for item "<item>"
     Then Cart icon should display 1
     When I click remove button for item "<item>"
-    Then Cart icon should be empty
+    Then Cart should be empty
 
     Examples:
       | item          |

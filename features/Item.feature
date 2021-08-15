@@ -26,7 +26,7 @@ Feature: Adding and removing items to/from cart at item page
     When  I click add to cart button at item page
     Then  Cart icon should display 1
     When  I click remove button at item page
-    Then  Cart icon should be empty
+    Then  Cart should be empty
 
     Examples:
       | item                              |

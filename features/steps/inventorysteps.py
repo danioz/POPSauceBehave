@@ -40,7 +40,7 @@ def step_impl(context):
     inventoryPage.remove_from_cart()
 
 
-@then(u'Cart icon should be empty')
+@then(u'Cart should be empty')
 def step_impl(context):
     inventoryPage.empty_cart()
 
