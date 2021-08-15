@@ -4,14 +4,14 @@ Feature: SauceDemo Login
     Given I am on SauceDemo LoginPage
     When I enter username "standard_user" and password "secret_sauce"
     And I click on login button
-    Then I must be successfully login to the Inventory page
+    Then I should be successfully login to the Inventory page
 
 
   Scenario Outline: Login to SauceDemo with Multiple parameters
     Given I am on SauceDemo LoginPage
     When I enter username "<username>" and password "<password>"
     And I click on login button
-    Then System must display "<error_message>"
+    Then System should display "<error_message>"
 
     Examples:
       | username        | password     | error_message                                                             |

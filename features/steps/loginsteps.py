@@ -12,6 +12,7 @@ def step_impl(context):
     global loginPage
     loginPage = LoginPage(context.driver)
     assert loginPage.get_title() == Test_Data.TITLE
+    assert loginPage.check_url() == Test_Data.BASE_URL
 
 
 @when(u'I enter username "{username}" and password "{password}"')
@@ -25,15 +26,13 @@ def step_impl(context):
     loginPage.click_login()
 
 
-@then(u'I must be successfully login to the Inventory page')
+@then(u'I should be successfully login to the Inventory page')
 def step_impl(context):
     inventoryPage = InventoryPage(context.driver)
-    inventoryPage.get_title() == 'PRODUCTS'
+    assert inventoryPage.get_title() == 'PRODUCTS'
+    assert inventoryPage.check_url() == Test_Data.INVENTORY_URL
 
 
-@then(u'System must display "{message}"')
+@then(u'System should display "{message}"')
 def step_impl(context, message):
     assert loginPage.get_error_message() == message
-
-
-
