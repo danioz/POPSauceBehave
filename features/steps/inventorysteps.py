@@ -53,5 +53,3 @@ def step_impl(context, item):
 @when(u'I click remove button for item "{item}"')
 def step_impl(context, item):
     inventoryPage.remove_item_from_cart(item)
-
-
