@@ -58,11 +58,11 @@ class CheckOutPage_1(BasePage):
     @allure.step("Continue checkout")
     def continue_checkout(self):
         self.do_click(Elements.BTN_CONTINUE)
-        from Pages.CheckOut2.CheckOut2Page import CheckOutPage_2
+        from features.pages.CheckOut2.CheckOut2Page import CheckOutPage_2
         return CheckOutPage_2(self.driver)
 
     @allure.step("Cancelling checkout")
     def cancel_checkout(self):
         self.do_click(Elements.BTN_CANCEL)
-        from Pages.Inventory.InventoryPage import InventoryPage
+        from features.pages.Inventory.InventoryPage import InventoryPage
         return InventoryPage(self.driver)

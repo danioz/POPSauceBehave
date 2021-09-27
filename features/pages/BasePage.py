@@ -1,4 +1,5 @@
 import allure
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait

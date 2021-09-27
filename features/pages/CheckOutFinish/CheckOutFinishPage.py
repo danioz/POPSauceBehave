@@ -24,5 +24,5 @@ class CheckOutPage_Finish(BasePage):
     @allure.step("Getting back home")
     def go_back_home(self):
         self.do_click(Elements.BTN_BACK_HOME)
-        from Pages.Inventory.InventoryPage import InventoryPage
+        from features.pages.Inventory.InventoryPage import InventoryPage
         return InventoryPage(self.driver)
